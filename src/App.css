@@ -1,0 +1,83 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;;
+}
+
+html,body{
+  height: 100%;
+  background-color: #212121;
+}
+
+.clear{
+  clear: both;
+}
+
+.container{
+  padding: 0 2%;
+}
+
+/****/
+
+header{
+  width: 100%;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  color: whitesmoke;
+}
+
+.header-left .logo{
+  display: inline-block;
+}
+
+.header-left li{
+  display: inline;
+  list-style: none;
+  margin: 0 15px;
+}
+
+.header-left a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.main-call{
+  width: 100%;
+  background-color: #ccc;
+  height: 50vh;
+}
+
+.movie-list{
+  padding: 60px 0;
+}
+
+.movie-list .container{
+  display: flex;
+  overflow-x: auto;
+  padding: 0;
+}
+
+.movie-list h2{
+  color: whitesmoke;
+  padding: 0 2%;
+}
+
+.movie-list .container::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-bg{
+  min-width: 15%;
+  height: 18vh;
+  background-color: rgb(182, 35, 35);
+  margin: 10px 2%;
+}
+
+
+
+
