@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import MovieBox from './components/MovieBox';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
@@ -19,18 +20,8 @@ function App() {
         <h2>Filmes</h2>
         <div className='container'>
           
-          <MovieBox/>
-          <MovieBox/>
-          <MovieBox/>
-          <MovieBox/>
-          <MovieBox/>
-          <MovieBox/>
-          <MovieBox/>
-          <MovieBox/>
-          <MovieBox/>
-          <MovieBox/>
-          <MovieBox/>
-          <MovieBox/>
+          <MovieBox title={"drive"}/>
+          <MovieBox title={"pandora"}/>
           <MovieBox/>
           <MovieBox/>
           <MovieBox/>
@@ -39,6 +30,7 @@ function App() {
 
         </div>{/*container*/}  
       </section>{/*movie-list*/}
+      
     </div>
   );
 }
