@@ -28,12 +28,31 @@ html,body{
 
 .exit{
   position: absolute;
-  top: 8%;
+  top: 4%;
   right: 2%;
-  color: white;
   z-index: 999;
   font-size: clamp(1rem, 2.5vw, 2rem);
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.exit a{
+  text-decoration: none;
+  color: #d32f2f;
+  transition: 0.4s;
+}
+
+.exit:hover{
+  color: #d50000;
+  scale: 1.1;
+}
+
+.exit a:hover{
+  color: #d50000;
+}
+
+.flex{
+  display: flex;
 }
 
 
@@ -68,7 +87,7 @@ header{
 .main-call{
   width: 100%;
   background-color: #ccc;
-  height: 50vh;
+  height: 30vh;
 }
 
 .movie-list{
@@ -92,19 +111,32 @@ header{
 
 .movie-bg{
   min-width: 15%;
-  height: 18vh;
+  height: 35vh;
   background-color: rgb(182, 35, 35);
   margin: 10px 2%;
   cursor: pointer;
+  border: 3px solid black;
+  border-radius: 10px;
+  transition: ease 0.4s;
+}
+
+.movie-bg:hover{
+  scale: 1.1;
+}
+
+.movie-bg img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 
 .movie-modal{
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 99;
-  background-color: black;
   width: 100%;
+  background-size: 100% 100%;
   height: 100vh;
   left: -120%;
   visibility: hidden;
@@ -112,38 +144,48 @@ header{
   transition: all 1s;
 }
 
-.movie-modal .container{
-  position: relative;
+.movie-modal .container-modal{
   width: 45%;
-  top: 20%;
   display: inline-block;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0.9023984593837535) 0%, rgba(0,0,0,0.6755077030812324) 74%, rgba(0,0,0,0) 100%);
+  padding: 0 2%;
+  height: 100vh;
+}
+
+.modal-content{
+  margin-top: 20%; /*CHANGE, its just for LGTV*/
+}
+
+.modal-content h2 span{
+  font-size: clamp(2.5rem, 2.5vw, 4.5rem);
 }
 
 .movie-modal h2{
   width: 100%;
-  font-size: 6vh;
-  margin-bottom: 10px;
+  font-size: clamp(3rem, 2.5vw, 5rem);
 }
 
 .movie-modal p{
   color: whitesmoke;
-  font-size: 2.1vh;
+  font-size: clamp(0.6rem, 2.5vw, 1rem);
   padding-left: 3%;
-  margin: 5px;
 }
 
-.movie-modal p:nth-of-type(1){
+.movie-modal .movie-info{
+  display: flex;
   font-style: italic;
-  font-size: 21px;
+  font-size: (0.8rem, 2.5vw, 1.2rem);
+  margin-bottom: 15px;
 }
 
 .movie-modal button{
   border: 0;
   background-color: #564D4D;
   color: whitesmoke;
-  padding: 10px 30px;
+  padding: 10px 15px;
   cursor: pointer;
-  font-size: 2.1vh;
+  font-size: clamp(0.6rem, 2.5vw, 1rem);
   margin: 15px 15px 0 0;
   border-radius: 5%;
   transition: 0.5s;
@@ -154,14 +196,24 @@ header{
   color: #564D4D;
 }
 
+.movie-modal button span{
+  padding: 0 5px;
+  display: flex;
+}
+
+.movie-modal button span:nth-of-type(2){
+  padding: 0 5px;
+}
+
 .movie-player{
   width: 100%;
-  height: 100vh;
-  display: none;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .movie-player video{
   width: 100%;
+  height: 100vh;
   position: relative;
 }
 
@@ -176,6 +228,36 @@ header{
 
 /****/
 
+/**TV 4K**/
+
+@media screen and (min-width: 1920px) {
+  .movie-modal h2{
+    font-size: clamp(4rem, 2.5vw, 6rem);
+  }
+
+  .modal-content h2 span{
+    font-size: clamp(4rem, 2.5vw, 6rem);
+  }
+  
+  .movie-modal p{
+    font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  }
+  
+  .movie-modal .movie-info{
+    font-size: (1.8rem, 2.5vw, 2.2rem);
+  }
+  
+  .movie-modal button{
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+  }
+
+  svg{
+    font-size: clamp(1.8rem, 2.5vw, 2.1rem) !important;
+    margin-left: 10px;
+  }
+}
+
+/****/
 
 
 
