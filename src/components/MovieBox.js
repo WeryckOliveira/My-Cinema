@@ -10,7 +10,7 @@ const MovieBox = ({title}) => {
 
   const [modal, setModal] = useState(false);
   const [movieState, setMovieState] = useState(false);
-  const [baseURL,setBaseURL] = useState(`https://api.themoviedb.org/3/search/movie?include_adult=false&page=1&language=pt-BR&api_key=b28fe18fdd72dfff392e8ae38fd2cbeb&query=${title}`);
+  const [baseURL,setBaseURL] = useState(`https://api.themoviedb.org/3/search/movie?include_adult=false&page=1&language=pt-BR&api_key=${title}`); /*API goes here*/
   const [post, setPost] = React.useState(null);
 
   React.useEffect(() => {
