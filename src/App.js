@@ -14,7 +14,7 @@ function App() {
 
           <div className='main-bg'></div>
 
-        </div>{/*container CHANGE*/}  
+        </div>{/*container*/}  
       </section>{/*main-call*/}
 
       <section className='movie-list'>
