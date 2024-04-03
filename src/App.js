@@ -4,6 +4,8 @@ import MovieBox from './components/MovieBox';
 import { Outlet } from 'react-router-dom';
 import MovieData from './components/MovieData';
 
+//CHANGE
+
 function App() {
   return (
     <div className="App">
