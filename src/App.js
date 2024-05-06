@@ -21,7 +21,7 @@ function App() {
       <section className='movie-list'>
         <h2>Filmes</h2>
 
-        <div className='container'>
+        <div className='container'> a
           
           <MovieBox title={"drive"}/>
           <MovieBox title={"vingadores era de ultron"}/>
