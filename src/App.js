@@ -4,7 +4,7 @@ import MovieBox from './components/MovieBox';
 import { Outlet } from 'react-router-dom';
 import MovieData from './components/MovieData';
 
-02
+
 function App() {
   return (
     <div className="App">
