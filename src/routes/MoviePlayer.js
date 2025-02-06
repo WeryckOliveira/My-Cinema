@@ -8,7 +8,7 @@ const MoviePlayer = () => {
 
   const { id } = useParams()
   
-
+12
   return (
     <div>
       <div className={'movie-player'}>
