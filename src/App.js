@@ -45,7 +45,7 @@ function App() {
 
         </div>{/*container*/}  
       </section>{/*movie-list*/}
-      1
+      
     </div>
   );
 }
