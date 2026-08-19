@@ -5,7 +5,7 @@ import App from './App';
 import ErrorPage from './routes/ErrorPage';
 import MoviePlayer from './routes/MoviePlayer';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-lç
+l
 const router = createBrowserRouter([
   {
     path: "/",
