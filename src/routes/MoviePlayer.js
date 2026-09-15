@@ -7,7 +7,7 @@ const src = '../mp4/dmc.mp4'
 const MoviePlayer = () => {
 
   const { id } = useParams()
-  
+  pp
 
   return (
     <div>
